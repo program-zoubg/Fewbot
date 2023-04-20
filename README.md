@@ -20,7 +20,7 @@
   > ```
 
 > 修改
-`/utils/edit.cpp`
+`/utils/edit.exe`
 
 ### Author | 作者
 **ZJL and ZMH**
