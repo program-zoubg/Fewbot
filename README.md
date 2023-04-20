@@ -1,2 +1,26 @@
+<div align="center">
+
 # Fewbot
-小白ZJL原创。一个轻量级的较完善的bot机器人，可以在data/文件夹里修改数据，也可以用“修改器.exe”修改。每次提出一个问题。
+### 轻量级bot机器人
+
+</div>
+
+### 用法 | Usage
+> 提问
+  > ```shell
+  > python main.py
+  > > key1
+  > 123456
+  > 
+  > > asdf
+  > > python
+  > > q
+  > 
+  > process exit by code 0.
+  > ```
+
+> 修改
+`/utils/edit.cpp`
+
+### Author | 作者
+**小白ZJL**

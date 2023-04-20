@@ -1,12 +1,14 @@
-from Class import upload
-text = open('.\\data\\Data.ini', 'r', encoding='utf-8').read()
-bot_main_dic = upload.upload_py(text)
-bot_li = list(bot_main_dic.keys())
-while True:
-    n = input("Q:")
-    if n == "quit":
-        break
-    for t in bot_li:
-        if t in n:
-            print(bot_main_dic[t])
-input('结束... Enter quit.')
+from utils import parser
+import sys
+
+
+with open('data/data.ini', 'r', encoding='utf-8') as f:
+    data = parser.parse(f.read())
+
+if __name__ == "__main__":
+    while True:
+        query = input("> ").strip()
+        if query in ("quit", "exit", "q"):
+            sys.exit(0)
+        elif query in data:
+            print(data[query], end="\n\n")
