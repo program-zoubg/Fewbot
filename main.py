@@ -2,7 +2,7 @@ from utils import parser
 import sys
 
 
-with open('data/data.ini', 'r', encoding='utf-8') as f:
+with open('data/data.ini', 'r') as f:
     data = parser.parse(f.read())
 
 if __name__ == "__main__":
